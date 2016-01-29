@@ -1,0 +1,13 @@
+{{#bar-header}}
+    <h2>Edit Photo</h2>
+{{/bar-header}}
+
+{{#screen-content classNames="no-scroll"}}
+  {{image-editing backgroundImage=currentImagePath}}
+{{/screen-content}}
+
+{{#bar-footer}}
+  <button class="link" {{action 'changePicture'}}>Choose photo</button>
+  <button {{action 'clearCanvas'}}>clear</button>
+  <input type="color" {{action 'onChangeColor' on="change"}}/>
+{{/bar-footer}}

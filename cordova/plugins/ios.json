@@ -1,0 +1,27 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.poeticsystems.child"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.poeticsystems.child"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.poeticsystems.child"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.poeticsystems.child"
+        },
+        "org.devgeeks.Canvas2ImagePlugin": {
+            "PACKAGE_NAME": "com.poeticsystems.child"
+        }
+    },
+    "dependent_plugins": {}
+}

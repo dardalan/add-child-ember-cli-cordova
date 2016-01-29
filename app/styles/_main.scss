@@ -1,0 +1,15 @@
+//helpers
+@import 'helpers/variables';
+@import 'helpers/animation';
+@import 'helpers/icons';
+
+//modules
+@import 'modules/image-avatar';
+@import 'modules/bar-header';
+@import 'modules/bar-footer';
+@import 'modules/screen-content';
+@import 'modules/image-editing';
+
+//pages
+@import 'pages/add-child';
+@import 'pages/photo';

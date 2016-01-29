@@ -1,0 +1,37 @@
+{{#bar-header}}
+    <a class="go-back">
+        <img src="images/arrow-left-white.png" class="icon-back"/>
+    </a>
+    <h2>My Children</h2>
+   <button class="edit-photo" {{action 'editPhoto'}}>
+       <span>photo</span>
+   </button>
+{{/bar-header}}
+
+{{#screen-content}}
+    <div class="padded-section">
+      {{image-avatar path=imagePath}}
+
+        <h3 class="name">{{fullName}}</h3>
+
+      {{#choose-kid flavor=flavor isFlavorBoy=isFlavorBoy birthDate=birthDate showPlaceholder=showPlaceholder
+      isFlavorGirl=isFlavorGirl isFlavorPregnant=isFlavorPregnant}}
+          <button class="btn-add" {{action 'addChild'}}>Add child</button>
+      {{/choose-kid}}
+      {{#each childs as |child|}}
+          <div class="item">
+              <img src="images/baby.png" class="icon-baby"/>
+              <div class="description">{{child.birthDate}}</div>
+              <a {{action 'removeChild' child}} class="link-remove">
+                  <img src="images/close.png" class="icon-close"/>
+              </a>
+          </div>
+      {{/each}}
+    </div>
+{{/screen-content}}
+
+<div class="footer">
+    <div class="padded-section">
+        <h3 class="next">Next</h3>
+    </div>
+</div>

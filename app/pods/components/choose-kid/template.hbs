@@ -1,0 +1,24 @@
+<div class="about">
+    <div class="padded-section">
+        <h3 class="title">Tell us about your kids</h3>
+        <button class="gender-box" {{action 'setFlavor' 'Boy'}}>
+            <div class="not-active"><div class="{{if isFlavorBoy 'active'}}"></div></div>
+            <span class="flavor">Boy</span>
+        </button>
+        <button class="gender-box" {{action 'setFlavor' 'Girl'}}>
+            <div class="not-active"><div class="{{if isFlavorGirl 'active'}}"></div></div>
+            <span class="flavor">Girl</span>
+        </button>
+        <button class="gender-box" {{action 'setFlavor' 'Pregnant'}}>
+            <div class="not-active"><div class="{{if isFlavorPregnant 'active'}}"></div></div>
+            <span class="flavor">Pregnant</span>
+        </button>
+        <div class="date">
+            <img src="images/calendar.png" class="icon-calendar"/>
+          <div class="date-placeholder">{{showPlaceholder}}</div>
+          {{input type='date' value=birthDate classNames="birth"}}
+            <img src="images/arrow-down.png" class="icon-arrow-down"/>
+        </div>
+    </div>
+    {{yield}}
+</div>

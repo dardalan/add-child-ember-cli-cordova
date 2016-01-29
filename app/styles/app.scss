@@ -1,0 +1,28 @@
+@import 'main';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'OpenSans', sans-serif;
+}
+
+.padded-section {
+  padding: 0 15px;
+}
+
+input {
+  border: none;
+  color: $border-blue-color;
+  background: transparent;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
